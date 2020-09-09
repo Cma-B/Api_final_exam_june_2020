@@ -21,5 +21,9 @@ RSpec.describe "Comments", type: :request do
     it 'is expected to return 200 response status'do
       expect(response).to have_http_status 200
     end
+
+    it 'is expected to return success message ' do
+      expect(response_json['message']).to eq 'Your comment was sent successfully'
+    end
   end
 end 
