@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 RSpec.describe "Comments", type: :request do
   let!(:user) { create(:user)}
   let!(:user_credentials) { user.create_new_auth_token }
