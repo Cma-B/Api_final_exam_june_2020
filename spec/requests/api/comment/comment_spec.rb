@@ -12,7 +12,7 @@ RSpec.describe "Comments", type: :request do
       post '/api/comments',
       params: {
         comment: {
-          description: "I realy recommend that article to young parents.",
+          body: "I realy recommend that article to young parents.",
           article_id: article.id
         }
       }, headers: user_headers
